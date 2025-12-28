@@ -3,7 +3,53 @@
     src: url("./fonts/Norse-Bold.otf");
 }
 
-label[for="textbox"] {
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+
+.img-container {
+    position: relative;
+    width: 30%;
+    height: 100%;
+}
+
+.img-plant {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.img-body {
+    position: absolute;
+    width: 100%;
+    height: 10rem;
+    background: black;
+    opacity: 0.6;
+    top: 8rem;
+    z-index: -1;
+}
+
+.img-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Norse-Bold, sans-serif;
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+
+    position: relative;
+    top: 7rem;
+}
+
+.img-odin {
+    width: 6rem;
+}
+
+/* label[for="textbox"] {
     font-size: large;
 }
 
@@ -14,4 +60,4 @@ img {
 
 h1 {
     font-family: norse-bold, sans-serif;
-}
+} */
