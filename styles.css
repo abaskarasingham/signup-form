@@ -1,6 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: norse-bold;
     src: url("./fonts/Norse-Bold.otf");
+}
+
+.overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    /* overflow-wrap: break-word; 
+    word-wrap: break-word;
+    white-space: normal;
+    overflow: auto; */
 }
 
 body {
@@ -11,8 +26,8 @@ body {
 
 .img-container {
     position: relative;
-    width: 30%;
-    height: 100%;
+    width: 35%;
+    flex-shrink: 0;
 }
 
 .img-plant {
@@ -28,7 +43,7 @@ body {
     height: 10rem;
     background: black;
     opacity: 0.6;
-    top: 8rem;
+    top: 7rem;
     z-index: -1;
 }
 
@@ -42,11 +57,34 @@ body {
     text-align: center;
 
     position: relative;
-    top: 7rem;
+    top: 6rem;
 }
 
 .img-odin {
     width: 6rem;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    background-color: #fafafa;
+    /* height: 30%; */
+    padding: 0 0 2rem 3rem;
+    font-family: sans-serif;
+}
+
+.form-heading > h2 {
+    max-inline-size: 55ch;
+    /* font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem); */
 }
 
 /* label[for="textbox"] {
